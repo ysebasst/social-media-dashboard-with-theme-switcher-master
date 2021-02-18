@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- TITLE -->
+    <title>Frontend Mentor | Social Media Dashboard</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header wrapper">
+      <nav class="nav">
+        <h1 class="nav__title">Social Media Dashboard</h1>
+        <p class="nav_text">Total Followers: 23,004</p>
+      </nav>
+      <div class="darkmode">
+        <p class="darkmode__text">Dark Mode</p>
+        <div class="darkmode__button" id="darkmode" role="button"></div>
+      </div>
+    </header>
+    <!-- SOCIAL -->
+    <section class="social wrapper">
+      <div class="social__item social__item--facebook">
+        <div class="social__info">
+          <img
+            class="social__logo"
+            src="images/icon-facebook.svg"
+            alt="icon facebook"
+          />
+          <p class="social__user">@nathanf</p>
+        </div>
+        <div class="social__followers">
+          <h3 class="social__number">1987</h3>
+          <p class="social__text">Followers</p>
+        </div>
+        <p class="social__today">12 Today</p>
+      </div>
+      <div class="social__item social__item--twitter">
+        <div class="social__info">
+          <img
+            class="social__logo"
+            src="images/icon-twitter.svg"
+            alt="icon twitter"
+          />
+          <p class="social__user">@nathanf</p>
+        </div>
+        <div class="social__followers">
+          <h3 class="social__number">1044</h3>
+          <p class="social__text">Followers</p>
+        </div>
+        <p class="social__today">99 Today</p>
+      </div>
+      <div class="social__item social__item--instagram">
+        <div class="social__info">
+          <img
+            class="social__logo"
+            src="images/icon-instagram.svg"
+            alt="icon instagram"
+          />
+          <p class="social__user">@realnathanf</p>
+        </div>
+        <div class="social__followers">
+          <h3 class="social__number">11k</h3>
+          <p class="social__text">Followers</p>
+        </div>
+        <p class="social__today">1099 Today</p>
+      </div>
+      <div class="social__item social__item--youtube">
+        <div class="social__info">
+          <img
+            class="social__logo"
+            src="images/icon-youtube.svg"
+            alt="icon youtube"
+          />
+          <p class="social__user">Nathan F.</p>
+        </div>
+        <div class="social__followers">
+          <h3 class="social__number">8239</h3>
+          <p class="social__text">Subscribers</p>
+        </div>
+        <p class="social__today social__today--negative">144 Today</p>
+      </div>
+    </section>
+    <!-- OVERVIEW -->
+    <section class="overview wrapper">
+      <h2 class="overview__title">Overview - Today</h2>
+      <div class="overview__items">
+        <div class="overview__item">
+          <h3 class="overview__text">Page Views</h3>
+          <img
+            class="overview__logo"
+            src="images/icon-facebook.svg"
+            alt="icon facebook"
+          />
+          <p class="overview__number">87</p>
+          <p class="overview__today">3%</p>
+        </div>
+
+        <div class="overview__item">
+          <h3 class="overview__text">Likes</h3>
+          <img
+            class="overview__logo"
+            src="images/icon-facebook.svg"
+            alt="icon facebook"
+          />
+          <p class="overview__number">52</p>
+          <p class="overview__today overview__today--negative">2%</p>
+        </div>
+
+        <div class="overview__item">
+          <h3 class="overview__text">Likes</h3>
+          <img
+            class="overview__logo"
+            src="images/icon-instagram.svg"
+            alt="icon instagram"
+          />
+          <p class="overview__number">5462</p>
+          <p class="overview__today">2257%</p>
+        </div>
+
+        <div class="overview__item">
+          <h3 class="overview__text">Profile Views</h3>
+          <img
+            class="overview__logo"
+            src="images/icon-instagram.svg"
+            alt="icon instagram"
+          />
+          <p class="overview__number">52k</p>
+          <p class="overview__today">1375%</p>
+        </div>
+
+        <div class="overview__item">
+          <h3 class="overview__text">Retweets</h3>
+          <img
+            class="overview__logo"
+            src="images/icon-twitter.svg"
+            alt="icon twitter"
+          />
+          <p class="overview__number">117</p>
+          <p class="overview__today">303%</p>
+        </div>
+
+        <div class="overview__item">
+          <h3 class="overview__text">Likes</h3>
+          <img
+            class="overview__logo"
+            src="images/icon-twitter.svg"
+            alt="icon twitter"
+          />
+          <p class="overview__number">507</p>
+          <p class="overview__today">553%</p>
+        </div>
+
+        <div class="overview__item">
+          <h3 class="overview__text">Likes</h3>
+          <img
+            class="overview__logo"
+            src="images/icon-youtube.svg"
+            alt="icon youtube"
+          />
+          <p class="overview__number">107</p>
+          <p class="overview__today overview__today--negative">19%</p>
+        </div>
+
+        <div class="overview__item">
+          <h3 class="overview__text">Total Views</h3>
+          <img
+            class="overview__logo"
+            src="images/icon-youtube.svg"
+            alt="icon youtube"
+          />
+          <p class="overview__number">1407</p>
+          <p class="overview__today overview__today--negative">12%</p>
+        </div>
+      </div>
+    </section>
+    <!-- ATTRIBUTION -->
+    <div class="attribution">
+      <span>Challenge by</span>
+      <a
+        href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H"
+        target="_blank"
+        >Frontend Mentor</a
+      >
+      <span>. Coded by </span>
+      <a href="https://github.com/ysebasst">Sebastian Sierra</a>.
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

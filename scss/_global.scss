@@ -1,0 +1,55 @@
+:root {
+  // ### Primary
+  --LimeGreen: hsl(163, 72%, 41%);
+  --BrightRed: hsl(356, 69%, 56%);
+
+  --Facebook: hsl(208, 92%, 53%);
+  --Twitter: hsl(203, 89%, 53%);
+  --Instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --YouTube: hsl(348, 97%, 39%);
+
+  // #### Light Theme
+  --Toggle: hsl(230, 22%, 74%);
+  --ToggleHover: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+  --background: hsl(0, 0%, 100%); // (BG)
+  // --background2: hsl(225, 100%, 98%); // (Top BG Pattern)
+  --background2: hsl(222, 50%, 96%); // (Top BG Pattern)
+  // --background3: hsl(227, 47%, 96%); // (Card BG)
+  --background3: hsl(232, 33%, 91%); // (Card BG)
+  --text1: hsl(228, 12%, 44%); // (Text)
+  --text2: hsl(230, 17%, 14%); // (Text)
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background);
+  color: var(--text1);
+  &.is-darkmode {
+    // #### Dark Theme
+    --Toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    // --background: hsl(230, 17%, 14%); // (BG)
+    --background: hsl(225, 17%, 14%); // (BG)
+    // --background2: hsl(232, 19%, 15%); // (Top BG Pattern)
+    --background2: hsl(228, 29%, 20%); // (Top BG Pattern)
+    // --background3: hsl(228, 28%, 20%); // (Card BG)
+    --background3: hsl(228, 26%, 27%); // (Card BG)
+    --text1: hsl(228, 34%, 66%); // (Text)
+    --text2: hsl(0, 0%, 100%); // (Text)
+  }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 327px;
+  margin: 0 auto;
+  @media screen and (min-width: 992px) {
+    max-width: 920px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1110px;
+  }
+}
